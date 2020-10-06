@@ -7,3 +7,9 @@
   GO_IMPORT_PATH = "https://github.com/j-fuentes/netlify-demo/dynamic"
 [context.production.environment]
   HUGO_VERSION = "0.75.1"
+
+[[redirects]]
+  from = '/posts/a_private_post/'
+  to = '/.netlify/functions/private'
+  force = true
+  status = 301
